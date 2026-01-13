@@ -35,6 +35,7 @@ def weather(latitude,longitude,country_name):
 	print(f"Country : {country_name}")
 	print(f"Temperature : {temp}°C")
 	print(f"Wind Speed : {wind_speed}")
+	dashboard()
 #defining exit to exit from the smart CLI Dashboard 
 
 def exit():
