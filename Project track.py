@@ -51,7 +51,7 @@ def dashboard():
 	print("3. Exit")
 	user_choice=int(input("Choose Option(1-3) : "))
 	if user_choice==1:
-		country_name=input("Enter country name : ")
+		country_name=input("Enter country name : ").title()
 		api_url=f"https://restcountries.com/v3.1/name/{country_name}"
 		get_country_info=requests.get(api_url)
 		data=get_country_info.json()
@@ -62,7 +62,7 @@ def dashboard():
 				longitude =latlng[1]
 			country_info(country_name)
 	elif user_choice==2:
-		country_name=input("Enter country name : ")
+		country_name=input("Enter country name : ").title()
 		api_url=f"https://restcountries.com/v3.1/name/{country_name}"
 		get_country_info=requests.get(api_url)
 		data=get_country_info.json()
